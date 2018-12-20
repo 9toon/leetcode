@@ -31,9 +31,7 @@ def default_spec_content(name)
     require_relative "../problem/#{name}"
 
     describe "Problem #{name}" do
-      it "" do
-        expect(solution()).to eq()
-      end
+      it { expect(solution()).to eq() }
     end
   EOF
 end
